@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="./assets/css/index.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guarder</title>
@@ -48,18 +48,18 @@
         </div>
 
         <nav class="nav_list">
-          <a href="#" class="nav_item active">Home</a>
-          <a href="#" class="nav_item">About</a>
-          <a href="#" class="nav_item">Services</a>
-          <a href="#" class="nav_item">Guards</a>
-          <a href="#" class="nav_item">Contact us</a>
+          <a href="#home" class="nav_item active">Home</a>
+          <a href="#about" class="nav_item">About</a>
+          <a href="#services" class="nav_item">Services</a>
+          <a href="#guards" class="nav_item">Guards</a>
+          <a href="#contact" class="nav_item">Contact us</a>
         </nav>
       </div>
     </header>
     <!-- /Header -->
 
     <!-- Slider -->
-    <section class="slider_section">
+    <section class="slider_section" id="home">
       <div class="home_slider">
         <div class="slider_inner">
           <div class="slider_item">
@@ -87,7 +87,7 @@
   <!-- /Hero area -->
 
   <!-- About -->
-  <section class="about section_padding">
+  <section class="about section_padding" id="about">
     <div class="container">
       <div class="row">
         <!-- <div class="about_img"> -->
@@ -126,7 +126,7 @@
   <!-- /About -->
 
   <!-- Services -->
-  <section class="services section_padding">
+  <section class="services section_padding" id="services">
     <div class="container">
       <div class="section_header">
         <div class="section_title">
@@ -194,7 +194,7 @@
   <!-- /Services -->
 
   <!-- Clients -->
-  <section class="clients section_padding">
+  <section class="clients section_padding" id="clients">
     <div class="container">
       <div class="section_header">
         <div class="section_title">
@@ -271,7 +271,7 @@
   <!-- /Get In touch -->
 
   <!-- Guards -->
-  <section class="guards section_padding">
+  <section class="guards section_padding" id="guards">
     <div class="container">
       <div class="section_header">
         <div class="section_title">
@@ -327,7 +327,7 @@
   <!-- /Guards -->
 
   <!-- Footer -->
-  <footer class="footer_section">
+  <footer class="footer_section" id="contact">
     <div class="container">
       <div class="footer_inner">
         <div class="footer_col">
@@ -354,22 +354,33 @@
           <h5 class="col_header">Contact Us</h5>
           <div class="col_info">
             <div class="info_item">
-              <i class='bx bxs-map'></i>
-              Location
+              <a href="https://maps.app.goo.gl/QTojmqWqzEWMogyg9" target="_blank">
+                <i class='bx bxs-map'></i>
+                Location
+              </a>
             </div>
             <div class="info_item">
-              <i class='bx bxs-phone'></i>
-              Call: 21235468
+              <a href="#">
+                <i class='bx bxs-phone'></i>
+                Call: 21235468
+              </a>
             </div>
             <div class="info_item">
-              <i class='bx bxs-envelope'></i>
-              mail@mail.com
+              <a href="#">
+                <i class='bx bxs-envelope'></i>
+                mail@domain.com
+              </a>
             </div>
           </div>
         </div>
 
         <div class="footer_col">
           <h5 class="col_header">Newsletter</h5>
+          <div class="subscribe_form">
+            <input type="email" placeholder="Enter your email">
+
+            <button class="btn yellov_btn">Subscribe</button>
+          </div>
         </div>
       </div>
 

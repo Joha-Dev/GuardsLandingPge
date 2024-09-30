@@ -34,6 +34,10 @@ img {
   border-style: none;
 }
 
+i {
+  font-size: 20px;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
@@ -72,7 +76,7 @@ input[type="number"] {
 .header_top {
   display: flex;
   justify-content: space-between;
-  padding: 15px 25px;
+  padding: 10px 25px;
   background-color: #0c0c0c;
 }
 .header_top_item {
@@ -80,8 +84,15 @@ input[type="number"] {
   color: #fff;
   font-size: 15px;
   transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .header_top_item:hover {
+  color: #f1db25;
+}
+
+.header_top_item > i {
   color: #f1db25;
 }
 
@@ -435,18 +446,18 @@ input[type="number"] {
 }
 
 /* Get In touch */
-.img_box {
-  /* padding-top: 90px; */
+.get_in_touch > .img_box {
+  padding-top: 90px;
   position: relative;
   padding-bottom: 90px;
 }
 
-.img_box > .container {
+.get_in_touch > .img_box > .container {
   z-index: 5;
   position: relative;
 }
 
-.img_box::before {
+.get_in_touch > .img_box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -467,7 +478,7 @@ input[type="number"] {
   );
 }
 
-.img_box > .img {
+.get_in_touch > .img_box > .img {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -477,7 +488,7 @@ input[type="number"] {
   overflow: hidden;
 }
 
-.img_box > .img > img {
+.get_in_touch > .img_box > .img > img {
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -491,8 +502,8 @@ form input {
   width: 100%;
   border: none;
   outline: 0;
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
   font-size: 18px;
 }
 
@@ -597,6 +608,7 @@ form .send_btn {
 
 .footer_col > li {
   list-style-type: none;
+  margin-bottom: 6px;
 }
 
 .footer_col > .col_info {
@@ -605,8 +617,37 @@ form .send_btn {
   gap: 10px;
 }
 
-.footer_col > .col_info > .info_item {
+.footer_col > .col_info > .info_item > a {
   display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 300ms;
+}
+
+.footer_col > .col_info > .info_item > a:hover {
+  color: rgba(255, 255, 255, 1);
+  scale: 1.04;
+}
+
+.subscribe_form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subscribe_form input {
+  outline: none;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.subscribe_form > button {
+  border-radius: 50px;
+  max-width: 75%;
 }
 
 .author_info {
