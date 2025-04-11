@@ -211,6 +211,13 @@ input[type="number"] {
   .col-7 {
     padding: 15px;
   }
+
+  .subscribe_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
 }
 /* .header_bottom .logo > a > img {
   text-decoration: none;
@@ -697,6 +704,7 @@ form .send_btn {
 .footer_inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -704,6 +712,8 @@ form .send_btn {
   flex: 1 1 0;
   color: #fff;
   text-align: left;
+  min-width: 220px;
+  margin-inline: 1rem;
 }
 
 .footer_col > .col_header {
