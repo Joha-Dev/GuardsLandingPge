@@ -79,6 +79,17 @@ input[type="number"] {
   padding: 10px 25px;
   background-color: #0c0c0c;
 }
+
+/* Adding fixed header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .header_top_item {
   text-decoration: none;
   color: #fff;
@@ -230,9 +241,9 @@ input[type="number"] {
 }
 
 .logo_img {
-  height: 60px;
+  height: 48px;
   position: relative;
-  top: -24px;
+  top: -32px;
   left: 20px;
   transition: all 0.5s;
 }
@@ -269,6 +280,8 @@ input[type="number"] {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+  /* Add padding to account for fixed header */
+  padding-top: 140px;
 }
 
 .hero_bg_box {
