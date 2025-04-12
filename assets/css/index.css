@@ -131,7 +131,19 @@ input[type="number"] {
   padding: 5px;
 }
 
+@media (min-width: 992px) {
+  .img_box { 
+    padding-top: calc(108px);
+  }  
+}
+
 @media (max-width: 991px) {
+  .img_box {
+    width: 100%;
+    padding-top: calc(186px);
+  
+  }
+
   .menu_toggle {
     display: block;
   }
@@ -142,7 +154,7 @@ input[type="number"] {
     top: 100%;
     left: 0;
     width: 100%;
-    background: #0c0c0c;
+    background: rgba(0, 0, 0, 0.4);
     padding: 20px;
     text-align: center;
     z-index: 1000;
@@ -193,6 +205,7 @@ input[type="number"] {
   .card {
     position: static;
     width: 100%;
+    max-height: 500px;
     margin-top: 30px;
   }
 
@@ -471,8 +484,10 @@ input[type="number"] {
   background-color: #fff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   width: 70%;
+  max-height: 500px;
   transition: all 0.5s;
 }
+
 .card:hover {
   scale: 1.03;
 }
@@ -491,6 +506,17 @@ input[type="number"] {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.card > .about_text > p {
+  max-height: 300px;
+  overflow-y: hidden;
+  /* Add these properties for text ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Servisec */
