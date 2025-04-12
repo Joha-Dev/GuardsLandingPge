@@ -443,8 +443,9 @@ input[type="number"] {
   display: flex;
   align-items: center;
 }
-.about_img > img {
-  width: 80%;
+.about_img {
+  max-height: 600px;
+  width: auto;
 }
 .about_info {
   position: absolute;
