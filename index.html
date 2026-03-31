@@ -59,11 +59,17 @@
             /></a>
           </div>
 
-          <button class="menu_toggle" aria-label="Toggle navigation menu">
+          <button
+            class="menu_toggle"
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
             <i class='bx bx-menu'></i>
           </button>
 
-          <nav class="nav_list">
+          <nav class="nav_list" id="primary-navigation">
             <a href="#home" class="nav_item active">Home</a>
             <a href="#about" class="nav_item">About</a>
             <a href="#services" class="nav_item">Services</a>
@@ -80,8 +86,8 @@
           <div class="slider_inner">
             <div class="slider_item">
               <h1 class="title">
-                Your saftey <br />
-                <span class="sub_title">Our responsiblity</span>
+                Your safety <br />
+                <span class="sub_title">Our responsibility</span>
               </h1>
 
               <p class="description">
@@ -214,7 +220,7 @@
       <div class="container">
         <div class="section_header">
           <div class="section_title">
-            <h2 class="text_black">WHAT IS SAYS OUR CLIENTS</h2>
+            <h2 class="text_black">What Our Clients Say</h2>
           </div>
         </div>
 
@@ -277,7 +283,7 @@
 
                 <input type="number" placeholder="Phone number" />
 
-                <input class="area" type="text" placeholder="Message" />
+                <textarea class="area" placeholder="Message"></textarea>
 
                 <div class="send_btn">
                   <button class="btn yellov_btn">Send</button>
@@ -377,6 +383,7 @@
                 <a
                   href="https://maps.app.goo.gl/QTojmqWqzEWMogyg9"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i class="bx bxs-map"></i>
                   Location
