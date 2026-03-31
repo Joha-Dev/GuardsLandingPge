@@ -182,8 +182,11 @@ footer[id] {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   cursor: pointer;
-  transition: background-color 0.25s ease, color 0.25s ease,
-    border-color 0.25s ease, transform 0.25s ease;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .btn.yellov_btn {
@@ -220,7 +223,11 @@ textarea:focus-visible,
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 1000;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.82),
+    rgba(0, 0, 0, 0.2)
+  );
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
@@ -295,7 +302,9 @@ textarea:focus-visible,
   color: #ffffff;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: border-color 0.25s ease, background-color 0.25s ease;
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .menu_toggle:hover {
@@ -318,8 +327,11 @@ textarea:focus-visible,
   padding: 0.9rem 1rem;
   border-radius: 999px;
   overflow: hidden;
-  transition: background-color 0.25s ease, color 0.25s ease,
-    transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
   letter-spacing: 0.06em;
   font-size: 0.88rem;
 }
@@ -336,7 +348,9 @@ textarea:focus-visible,
   opacity: 0;
   transform: scaleX(0);
   transform-origin: center;
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .nav_item.active {
@@ -399,7 +413,7 @@ textarea:focus-visible,
 
 .hero_bg_box .img_box > img {
   object-fit: cover;
-  object-position: center;
+  object-position: center 0%;
 }
 
 .slider_section {
@@ -480,7 +494,9 @@ textarea:focus-visible,
   background-color: #ffffff;
   border-radius: var(--surface-radius);
   box-shadow: var(--shadow-soft);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -538,7 +554,9 @@ textarea:focus-visible,
   border-radius: var(--surface-radius);
   text-align: center;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .services_item:hover,
@@ -614,7 +632,9 @@ textarea:focus-visible,
   transform: translateY(-50%);
   z-index: 2;
   color: #ffffff;
-  transition: background-color 0.2s ease, color 0.2s ease,
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
     transform 0.2s ease;
 }
 
@@ -684,7 +704,9 @@ form textarea {
   font-size: 1rem;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  transition: border-color 0.25s ease, background-color 0.25s ease;
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 form input:hover,
@@ -821,7 +843,9 @@ form .send_btn {
   gap: 0.5rem;
   text-decoration: none;
   color: var(--color-white-soft);
-  transition: color 0.25s ease, transform 0.25s ease;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .footer_col > .col_info > .info_item > a:hover {
@@ -898,7 +922,9 @@ form .send_btn {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 0.25s ease, transform 0.25s ease,
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
       visibility 0.25s ease;
   }
 
